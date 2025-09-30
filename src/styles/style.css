@@ -72,7 +72,6 @@ main {
 
 .content__section_image {
   position: relative;
-  background-size: cover;
   overflow: hidden;
   max-width: 100%;
 }
@@ -110,7 +109,9 @@ main {
   z-index: 1;
   top: 25px;
   right: 25px;
+  text-shadow: 1px var(--shadow-color, #ffffff); 
   -webkit-text-stroke: 1px var(--shadow-color, #ffffff);
+
 }
 
 .card__icon-button {
@@ -303,9 +304,9 @@ main {
     padding: 7px 13px;
   }
 
-  .header {
-    block-size: 327px;
-  }
+   .header {
+    max-block-size: 327px;
+  } 
 
   .header__title {
     font-size: 49px;
