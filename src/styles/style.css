@@ -202,7 +202,8 @@ main {
   min-block-size: 38px;
   font-family: var(--variable-font, "PressStart2P", fantasy);
   border: var(--border-container, 2px solid rgba(0, 0, 0, 1));
-  
+  text-transform: uppercase;
+  /*Добавил верхний регистр согласно замечанию в блоке с кнопкой закрытия*/
 }
 
 .save__window[open] {
