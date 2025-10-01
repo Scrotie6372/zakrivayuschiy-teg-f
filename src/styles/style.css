@@ -110,7 +110,6 @@ main {
   top: 25px;
   right: 25px;
   text-shadow: 1px var(--shadow-color, #ffffff); 
-  -webkit-text-stroke: 1px var(--shadow-color, #ffffff);
 
 }
 
@@ -251,6 +250,8 @@ main {
   overflow: hidden;
   cursor: pointer;
   z-index: 1;
+  background-color: var(--shadow-color,#ffffff);
+  /*Добавил белый фон кнопкам*/
 }
 
 .button:focus {
@@ -294,7 +295,7 @@ main {
 @supports ((text-stroke: 1px var(--shadow-color)) or (-webkit-text-stroke: 1px var(--shadow-color))) {
   .content__section_label {
     text-shadow: none;
-    -webkit-text-stroke: 1px var(--shadow-color, #ffffff));
+    -webkit-text-stroke: 1px var(--shadow-color, #ffffff);
     text-stroke: 1px var(--shadow-color, #ffffff);
   }
 }
@@ -305,7 +306,9 @@ main {
   }
 
    .header {
-    max-block-size: 327px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    /*Понял, убрал мин/макс блок сайзы, выравнил все паддингами*/
   } 
 
   .header__title {
@@ -317,7 +320,7 @@ main {
   }
 
   .content__section_label {
-    top: 28px;
+    top: 26px;
     right: 27px;
   }
 
